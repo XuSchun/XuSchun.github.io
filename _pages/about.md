@@ -26,6 +26,7 @@ redirect_from:
 来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。喜欢哆啦A梦，喜欢PVP游戏勾心斗角，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥，CS十年牢玩家，LOL14年大乱斗选手
 
 
+
 # 📖 教育经历
 - *2025.09-至今*: &nbsp;🎓 北京大学——临床医学（外科学）
 - *2020.09-2025.06*: &nbsp;🎓 中国医科大学——临床医学
@@ -51,9 +52,3 @@ redirect_from:
 - 🔬间充质干细胞（MSC）相关实验操作
 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
