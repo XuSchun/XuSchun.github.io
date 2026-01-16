@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xushichun-Homepage"
+title                    : "Xushichun"
 description              : " 北大人民医院抡大锤预备工 "
 repository               : "RayeRen/acad-homepage.github.io"
 google_scholar_stats_use_cdn : true
