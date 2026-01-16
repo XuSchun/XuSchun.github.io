@@ -19,11 +19,11 @@ redirect_from:
 
 用来完成作业的个人主页，意外感觉蛮有意思，以后会不定期更新个人信息
 
-北大人民医院研一骨科在读，虽然读的是骨科，但是每天都在和神经打交道
+北大人民医院研一骨科在读，虽然读的是骨科，但是每天都在和神经打交道。
 
-来自边境十八线城市丹东，但是某种意义上也是国际化超级大都市
+目前研究方向：骨关节炎（OA）和椎间盘退变（IVDD）导致背根神经节敏化所引起的疼痛（捡点师兄师姐的边角料养活自己）
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。喜欢打游戏，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥
 
 
 # 📖 教育经历
@@ -45,9 +45,9 @@ My research interest includes neural machine translation and computer vision. I 
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 🎖 个人技能
+- 🔬大鼠DRG提取与培养 
+- 🔬间充质干细胞（MSC）相关实验操作
 
 
 # 💬 Invited Talks
