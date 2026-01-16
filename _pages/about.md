@@ -23,7 +23,7 @@ redirect_from:
 
 目前研究方向：骨关节炎（OA）和椎间盘退变（IVDD）导致背根神经节敏化所引起的疼痛（捡点师兄师姐的边角料养活自己）
 
-来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。喜欢打游戏，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥
+来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。钟爱PVP游戏，享受玩家勾心斗角，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥，CS十年牢玩家，LOL14年大乱斗选手
 
 
 # 📖 教育经历
@@ -39,11 +39,12 @@ redirect_from:
 
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+- 抱紧师兄大腿水一水 
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+- 小学初中期间多次在校周报上发表评论文章，** 引用：0 **
 
 # 🎖 个人技能
 - 🔬大鼠DRG提取与培养 
