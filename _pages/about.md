@@ -19,11 +19,11 @@ redirect_from:
 
 用来完成作业的个人主页，意外感觉蛮有意思，以后会不定期更新个人信息
 
-北大人民医院研一骨科在读，虽然读的是骨科，但是每天都在和神经打交道。
+北大人民医院研一骨科在读，每天却和神经打交道
 
 目前研究方向：骨关节炎（OA）和椎间盘退变（IVDD）导致背根神经节敏化所引起的疼痛（捡点师兄师姐的边角料养活自己）
 
-来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。钟爱PVP游戏，享受玩家勾心斗角，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥，CS十年牢玩家，LOL14年大乱斗选手
+来自边境十八线城市亚洲丹东，某种意义上是国际化超级大都市。喜欢哆啦A梦，喜欢PVP游戏勾心斗角，曾获得东方红小学四年一班CF杯冠军，三角洲行动千万撤离，永劫无间（被）单杀职业冠军刀一挥，CS十年牢玩家，LOL14年大乱斗选手
 
 
 # 📖 教育经历
@@ -32,7 +32,7 @@ redirect_from:
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">哆啦A梦</div><img src='images/5c67838b5c4130e5a40de7527d2032403d365a01.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Biofunctionalization of Stem Cell Scaffold for Osteogenesis and Bone Regeneration](https://www.mdpi.com/2218-273X/15/12/1700)
