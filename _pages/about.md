@@ -52,20 +52,16 @@ redirect_from:
 - 🔬间充质干细胞（MSC）相关实验操作
 
 ---
-title: "心血管疾病预测与特征可解释性分析"
-collection: portfolio
-type: "Machine Learning"
-permalink: /portfolio/cvd-prediction-model
-date: 2026-01-18
-excerpt: "基于随机森林与SHAP值的心血管疾病风险预测模型，实现高精度分类与深度特征可解释性分析"
-header:
-  teaser: /images/portfolio/cvd-prediction-model/roc_curve.png
-tags:
+
+# 📖 课堂作业展示: "心血管疾病预测与特征可解释性分析"
+- 基于随机森林与SHAP值的心血管疾病风险预测模型，实现高精度分类与深度特征可解释性分析"
+
+-tags:
   - 机器学习
   - 数据挖掘
   - 可解释性AI
   - 医疗预测
-tech_stack:
+-tech_stack:
   - name: Python
   - name: Scikit-learn
   - name: SHAP
