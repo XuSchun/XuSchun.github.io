@@ -54,12 +54,12 @@ redirect_from:
 # 📖 课堂作业展示: "心血管疾病预测与特征可解释性分析"
 - 基于随机森林与SHAP值的心血管疾病风险预测模型，实现高精度分类与深度特征可解释性分析"
 
--tags:
+###tags:
   - 机器学习
   - 数据挖掘
   - 可解释性AI
   - 医疗预测
--tech_stack:
+###tech_stack:
   - name: Python
   - name: Scikit-learn
   - name: SHAP
