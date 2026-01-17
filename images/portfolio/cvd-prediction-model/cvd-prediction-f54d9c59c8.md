@@ -1,0 +1,143 @@
+---
+title: "心血管疾病预测与特征可解释性分析"
+collection: portfolio
+type: "Machine Learning"
+permalink: /portfolio/cvd-prediction-model
+date: 2026-01-18
+excerpt: "基于随机森林与SHAP值的心血管疾病风险预测模型，实现高精度分类与深度特征可解释性分析"
+header:
+  teaser: /images/portfolio/cvd-prediction-model/roc_curve.png
+tags:
+  - 机器学习
+  - 数据挖掘
+  - 可解释性AI
+  - 医疗预测
+tech_stack:
+  - name: Python
+  - name: Scikit-learn
+  - name: SHAP
+  - name: Statsmodels
+  - name: Pandas
+---
+
+## 项目背景
+
+心血管疾病是全球范围内导致死亡的主要原因之一，早期识别高风险人群对疾病预防和干预具有重要意义。本项目基于多维度健康指标数据，构建机器学习预测模型，旨在通过分析BMI、健康状况、吸烟史、年龄、性别、运动习惯等特征，准确预测个体患心血管疾病的风险概率。
+
+项目采用随机森林算法作为核心分类器，并通过SHAP（SHapley Additive exPlanations）值方法实现模型决策过程的深度可解释性分析，为临床决策提供科学依据。
+
+## 数据预处理与特征工程
+
+项目使用CVD_cleaned.csv数据集，首先对类别变量进行编码处理：将二分类变量（如心脏病患病情况、吸烟史、抑郁史、关节炎、运动习惯）映射为0/1数值，对性别变量进行Male标识编码（1为男性，0为女性）。
+
+```python
+# 二分类变量编码
+binary_cols = ['Heart_Disease', 'Exercise', 'Smoking_History', 'Depression', 'Arthritis']
+for col in binary_cols:
+    df[col] = df[col].map({'Yes': 1, 'No': 0})
+
+# 性别编码
+df['Sex_Male'] = df['Sex'].map({'Male': 1, 'Female': 0})
+
+# 健康状况序数编码
+health_map = {'Poor': 0, 'Fair': 1, 'Good': 2, 'Very Good': 3, 'Excellent': 4}
+df['Health_Score'] = df['General_Health'].map(health_map)
+
+# 年龄类别编码
+age_map = {label: idx for idx, label in enumerate(sorted(df['Age_Category'].unique()))}
+df['Age_Code'] = df['Age_Category'].map(age_map)
+```
+
+特征选择聚焦于六个核心预测变量：BMI、健康评分、年龄编码、吸烟史、性别、运动习惯。数据集经过缺失值处理后，按8:2比例划分为训练集与测试集。
+
+![特征相关性热图](/images/portfolio/cvd-prediction-model/correlation_heatmap.png)
+*图1：各特征间的相关性分析，健康评分与BMI呈显著正相关*
+
+![目标变量分布](/images/portfolio/cvd-prediction-model/target_distribution.png)
+*图2：数据集中心脏病患病情况的类别分布*
+
+## 模型训练与评估
+
+采用随机森林分类器作为预测模型，设置100棵决策树，最大深度为8，并使用类别平衡权重（class_weight='balanced'）应对数据集不平衡问题。
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+rf = RandomForestClassifier(
+    n_estimators=100,
+    max_depth=8,
+    class_weight='balanced',
+    random_state=42
+)
+rf.fit(X_train, y_train)
+```
+
+模型在测试集上的表现通过混淆矩阵和ROC曲线进行综合评估。混淆矩阵直观展示了模型在预测健康与患病两类样本时的准确性与误判情况，ROC曲线则反映了模型在不同阈值下的分类性能。
+
+![混淆矩阵](/images/portfolio/cvd-prediction-model/confusion_matrix.png)
+*图3：模型预测结果与真实标签的混淆矩阵*
+
+![ROC曲线](/images/portfolio/cvd-prediction-model/roc_curve.png)
+*图4：模型ROC曲线与AUC值，展示整体分类性能*
+
+为进一步验证特征的重要性和统计显著性，项目还构建了逻辑回归模型进行对比分析：
+
+```python
+import statsmodels.formula.api as smf
+
+logit_res = smf.logit(
+    'Heart_Disease ~ BMI + Health_Score + Smoking_History + Sex_Male',
+    data=df_final
+).fit()
+print(logit_res.summary())
+```
+
+## 模型可解释性分析
+
+### SHAP值分析
+
+采用SHAP值方法对随机森林模型进行可解释性分析。SHAP值基于博弈论中的Shapley值，能够量化每个特征对模型预测结果的边际贡献。
+
+```python
+import shap
+
+# 计算SHAP值
+explainer = shap.TreeExplainer(rf)
+sample_X = X_test.sample(n=500, random_state=42)
+shap_values = explainer.shap_values(sample_X)
+
+# SHAP摘要图
+shap.summary_plot(shap_values[1], sample_X)
+
+# SHAP依赖图
+shap.dependence_plot(
+    'BMI', shap_values[1], sample_X,
+    interaction_index='Health_Score'
+)
+```
+
+![SHAP摘要图](/images/portfolio/cvd-prediction-model/shap_summary.png)
+*图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
+
+![SHAP依赖图](/images/portfolio/cvd-prediction-model/shap_dependence_bmi.png)
+*图6：BMI与健康评分的交互作用对预测结果的影响*
+
+### 关键发现
+
+1. **BMI是首要风险因子**：SHAP分析显示，BMI值越高，患心血管疾病的风险越大，这与医学常识高度一致。
+
+2. **健康状况的显著影响**：自我评估的健康评分（Health_Score）对预测结果具有重要贡献，健康状况越差，患病风险越高。
+
+3. **吸烟史与性别因素**：吸烟史和男性性别特征均与较高的患病风险相关，符合流行病学研究结果。
+
+4. **交互效应**：BMI与健康评分之间存在明显的交互作用，即在BMI较高的个体中，健康评分对风险预测的影响更为显著。
+
+![BMI分布与健康状况](/images/portfolio/cvd-prediction-model/violin_bmi_health.png)
+*图7：不同健康状况类别下BMI分布的小提琴图，展示数据的分布特征*
+
+## 总结
+
+本项目成功构建了心血管疾病风险预测模型，通过随机森林算法实现了较高的分类准确率，并利用SHAP值方法揭示了模型的决策逻辑。研究结果表明，BMI、健康状况、吸烟史是预测心血管疾病风险的三个关键因素，为个性化健康管理提供了科学依据。
+
+模型的可解释性分析不仅验证了结果的可靠性，也为临床医生和公共卫生决策者提供了直观、量化的风险评估工具，具有重要的应用价值。
