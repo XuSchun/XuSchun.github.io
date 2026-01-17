@@ -103,10 +103,10 @@ df['Age_Code'] = df['Age_Category'].map(age_map)
 
 特征选择聚焦于六个核心预测变量：BMI、健康评分、年龄编码、吸烟史、性别、运动习惯。数据集经过缺失值处理后，按8:2比例划分为训练集与测试集。
 
-![特征相关性热图](/images/portfolio/cvd-prediction-model/correlation_heatmap.png)
+![特征相关性热图](/images/portfolio/cvd-prediction-model/1_correlation_heatmap.png)
 *图1：各特征间的相关性分析，健康评分与BMI呈显著正相关*
 
-![目标变量分布](/images/portfolio/cvd-prediction-model/target_distribution.png)
+![目标变量分布](/images/portfolio/cvd-prediction-model/2_target_distribution.png)
 *图2：数据集中心脏病患病情况的类别分布*
 
 ## 模型训练与评估
@@ -128,10 +128,10 @@ rf.fit(X_train, y_train)
 
 模型在测试集上的表现通过混淆矩阵和ROC曲线进行综合评估。混淆矩阵直观展示了模型在预测健康与患病两类样本时的准确性与误判情况，ROC曲线则反映了模型在不同阈值下的分类性能。
 
-![混淆矩阵](/images/portfolio/cvd-prediction-model/confusion_matrix.png)
+![混淆矩阵](/images/portfolio/cvd-prediction-model/4_confusion_matrix.png)
 *图3：模型预测结果与真实标签的混淆矩阵*
 
-![ROC曲线](/images/portfolio/cvd-prediction-model/roc_curve.png)
+![ROC曲线](/images/portfolio/cvd-prediction-model/5_roc_curve.png)
 *图4：模型ROC曲线与AUC值，展示整体分类性能*
 
 为进一步验证特征的重要性和统计显著性，项目还构建了逻辑回归模型进行对比分析：
@@ -170,10 +170,10 @@ shap.dependence_plot(
 )
 ```
 
-![SHAP摘要图](/images/portfolio/cvd-prediction-model/shap_summary.png)
+![SHAP摘要图](/images/portfolio/cvd-prediction-model/6_shap_summary.png)
 *图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
 
-![SHAP依赖图](/images/portfolio/cvd-prediction-model/shap_dependence_bmi.png)
+![SHAP依赖图](/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png)
 *图6：BMI与健康评分的交互作用对预测结果的影响*
 
 ### 关键发现
