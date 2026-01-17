@@ -51,8 +51,6 @@ redirect_from:
 - 🔬大鼠DRG提取与培养 
 - 🔬间充质干细胞（MSC）相关实验操作
 
----
-
 # 📖 课堂作业展示: "心血管疾病预测与特征可解释性分析"
 - 基于随机森林与SHAP值的心血管疾病风险预测模型，实现高精度分类与深度特征可解释性分析"
 
@@ -67,7 +65,6 @@ redirect_from:
   - name: SHAP
   - name: Statsmodels
   - name: Pandas
----
 
 ## 项目背景
 
