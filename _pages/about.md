@@ -201,7 +201,7 @@ shap.dependence_plot(
 
 
 <div align="center">
-  <img src="/images/portfolio/cvd-prediction-model/violin_bmi_health.png" width="80%">
+  <img src="/images/portfolio/cvd-prediction-model/3_violin_bmi_health.png" width="80%">
   <p>图 2：BMI分布与健康状况</p>
 </div>
 *图7：不同健康状况类别下BMI分布的小提琴图，展示数据的分布特征*
