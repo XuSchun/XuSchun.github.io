@@ -134,9 +134,11 @@ rf.fit(X_train, y_train)
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/4_confusion_matrix.png" width="100%"><br><center>图 4：混淆矩阵（平衡权重）</center></td>
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 5：ROC 曲线</center></td>
   </tr>
+
 *图3：模型预测结果与真实标签的混淆矩阵*
 
 *图4：模型ROC曲线与AUC值，展示整体分类性能*
+
 </table>
 
 
