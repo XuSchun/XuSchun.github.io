@@ -97,7 +97,10 @@ df['Age_Code'] = df['Age_Category'].map(age_map)
 
 特征选择聚焦于六个核心预测变量：BMI、健康评分、年龄编码、吸烟史、性别、运动习惯。数据集经过缺失值处理后，按8:2比例划分为训练集与测试集。
 
-![特征相关性热图](/images/portfolio/cvd-prediction-model/correlation_heatmap.png)
+<div align="center">
+  <img src="/images/portfolio/1_correlation_heatmap.png" width="80%">
+  <p>图 1：特征相关性热力图</p>
+</div>
 *图1：各特征间的相关性分析，健康评分与BMI呈显著正相关*
 
 ![目标变量分布](/images/portfolio/cvd-prediction-model/2_target_distribution.png)
