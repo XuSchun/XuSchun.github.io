@@ -135,9 +135,9 @@ rf.fit(X_train, y_train)
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 4：ROC 曲线</center></td>
   </tr>
 
--图3：模型预测结果与真实标签的混淆矩阵*
+  - 图3：模型预测结果与真实标签的混淆矩阵*
 
--图4：模型ROC曲线与AUC值，展示整体分类性能*
+  - 图4：模型ROC曲线与AUC值，展示整体分类性能*
 
 </table>
 
@@ -184,9 +184,9 @@ shap.dependence_plot(
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/6_shap_summary.png" width="100%"><br><center>图 5：SHAP 特征贡献摘要</center></td>
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png" width="100%"><br><center>图 6：BMI 特征依赖图</center></td>
   </tr>
-*图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
+  - 图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
 
-*图6：BMI与健康评分的交互作用对预测结果的影响*
+  - 图6：BMI与健康评分的交互作用对预测结果的影响*
 </table>
 
 
