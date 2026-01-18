@@ -128,6 +128,13 @@ rf.fit(X_train, y_train)
 
 模型在测试集上的表现通过混淆矩阵和ROC曲线进行综合评估。混淆矩阵直观展示了模型在预测健康与患病两类样本时的准确性与误判情况，ROC曲线则反映了模型在不同阈值下的分类性能。
 
+### 2. 模型性能评估
+<table border="0">
+  <tr>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/4_confusion_matrix.png" width="100%"><br><center>图 4：混淆矩阵（平衡权重）</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 5：ROC 曲线</center></td>
+  </tr>
+</table>
 ![混淆矩阵](/images/portfolio/cvd-prediction-model/4_confusion_matrix.png)
 *图3：模型预测结果与真实标签的混淆矩阵*
 
@@ -188,7 +195,11 @@ shap.dependence_plot(
 
 4. **交互效应**：BMI与健康评分之间存在明显的交互作用，即在BMI较高的个体中，健康评分对风险预测的影响更为显著。
 
-![BMI分布与健康状况](/images/portfolio/cvd-prediction-model/violin_bmi_health.png)
+
+<div align="center">
+  <img src="/images/portfolio/cvd-prediction-model/violin_bmi_health.png" width="80%">
+  <p>图 2：BMI分布与健康状况</p>
+</div>
 *图7：不同健康状况类别下BMI分布的小提琴图，展示数据的分布特征*
 
 ## 总结
