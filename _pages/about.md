@@ -134,9 +134,11 @@ rf.fit(X_train, y_train)
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/4_confusion_matrix.png" width="100%"><br><center>图 4：混淆矩阵（平衡权重）</center></td>
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 5：ROC 曲线</center></td>
   </tr>
-</table>
 *图3：模型预测结果与真实标签的混淆矩阵*
+
 *图4：模型ROC曲线与AUC值，展示整体分类性能*
+</table>
+
 
 为进一步验证特征的重要性和统计显著性，项目还构建了逻辑回归模型进行对比分析：
 
@@ -180,9 +182,11 @@ shap.dependence_plot(
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/6_shap_summary.png" width="100%"><br><center>图 6：SHAP 特征贡献摘要</center></td>
     <td width="50%"><img src="/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png" width="100%"><br><center>图 7：BMI 特征依赖图</center></td>
   </tr>
-</table>
 *图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
+
 *图6：BMI与健康评分的交互作用对预测结果的影响*
+</table>
+
 
 
 ### 关键发现
