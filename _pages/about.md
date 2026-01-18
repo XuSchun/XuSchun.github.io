@@ -131,13 +131,13 @@ rf.fit(X_train, y_train)
 ### 2. 模型性能评估
 <table border="0">
   <tr>
-    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/4_confusion_matrix.png" width="100%"><br><center>图 4：混淆矩阵（平衡权重）</center></td>
-    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 5：ROC 曲线</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/4_confusion_matrix.png" width="100%"><br><center>图 3：混淆矩阵（平衡权重）</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/5_roc_curve.png" width="100%"><br><center>图 4：ROC 曲线</center></td>
   </tr>
 
-*图3：模型预测结果与真实标签的混淆矩阵*
+-图3：模型预测结果与真实标签的混淆矩阵*
 
-*图4：模型ROC曲线与AUC值，展示整体分类性能*
+-图4：模型ROC曲线与AUC值，展示整体分类性能*
 
 </table>
 
@@ -181,8 +181,8 @@ shap.dependence_plot(
 ### 3. SHAP 模型解释
 <table border="0">
   <tr>
-    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/6_shap_summary.png" width="100%"><br><center>图 6：SHAP 特征贡献摘要</center></td>
-    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png" width="100%"><br><center>图 7：BMI 特征依赖图</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/6_shap_summary.png" width="100%"><br><center>图 5：SHAP 特征贡献摘要</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png" width="100%"><br><center>图 6：BMI 特征依赖图</center></td>
   </tr>
 *图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
 
@@ -204,7 +204,7 @@ shap.dependence_plot(
 
 <div align="center">
   <img src="/images/portfolio/cvd-prediction-model/3_violin_bmi_health.png" width="80%">
-  <p>图 2：BMI分布与健康状况</p>
+  <p>图 7：BMI分布与健康状况</p>
 </div>
 *图7：不同健康状况类别下BMI分布的小提琴图，展示数据的分布特征*
 
