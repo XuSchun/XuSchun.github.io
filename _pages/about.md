@@ -167,11 +167,13 @@ shap.dependence_plot(
 )
 ```
 
-![SHAP摘要图](/images/portfolio/cvd-prediction-model/6_shap_summary.png)
-*图5：特征重要性排序与SHAP值分布，展示各特征对预测的贡献*
-
-![SHAP依赖图](/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png)
-*图6：BMI与健康评分的交互作用对预测结果的影响*
+### 3. SHAP 模型解释
+<table border="0">
+  <tr>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/6_shap_summary.png" width="100%"><br><center>图 6：SHAP 特征贡献摘要</center></td>
+    <td width="50%"><img src="/images/portfolio/cvd-prediction-model/7_shap_dependence_bmi.png" width="100%"><br><center>图 7：BMI 特征依赖图</center></td>
+  </tr>
+</table>
 
 ### 关键发现
 
