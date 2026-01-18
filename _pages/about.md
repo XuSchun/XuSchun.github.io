@@ -103,7 +103,10 @@ df['Age_Code'] = df['Age_Category'].map(age_map)
 </div>
 *图1：各特征间的相关性分析，健康评分与BMI呈显著正相关*
 
-![目标变量分布](/images/portfolio/cvd-prediction-model/2_target_distribution.png)
+<div align="center">
+  <img src="/images/portfolio/cvd-prediction-model/2_target_distribution.png" width="80%">
+  <p>图 2：目标变量分布</p>
+</div>
 *图2：数据集中心脏病患病情况的类别分布*
 
 ## 模型训练与评估
